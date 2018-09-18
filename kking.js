@@ -257,7 +257,7 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
 
 
 client.on('message', function(message) {
-	const myID = "385529907226345482";
+	const myID = "308671532031279104";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
 		        if(message.author.id !== myID) return;
@@ -315,7 +315,7 @@ client.on('message', function(message) {
 
 client.on('message', async message => {
             if(!message.channel.guild) return;
-             if (message.content.startsWith("$sets")) {
+             if (message.content.startsWith("-")) {
 let args = message.content.split(' ').slice(1).join(' ');
             let sigMessage = await args;
             
